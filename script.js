@@ -7,7 +7,8 @@ btns.forEach((btn) => {
     if (currentAudio) { // if there's an audio playing, stop it
       currentAudio.pause();
     }
-    currentAudio = new Audio('sounds/' + btn.innerText + '.mp3');
+    currentAudio = new Audio('sounds/'+ btn.innerText +'.mp3');
+	  console.log(currentAudio);
     currentAudio.play();
   });
 });
